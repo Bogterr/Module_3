@@ -5,12 +5,22 @@ def print_params(a = 1, b = "string", c = True):
     print(a, b, c)
     return(a, b, c)
 
+def print_params_anymore(*args):
+    print(args)
+    return 0
+
 print_params(1, 2, 3)
 print_params(4, 5)
 print_params()
 print_params(b = 25) 
 print_params(c = [1,2,3])
 print()
+# test
+print_params_anymore(1, 2, 3)
+print_params_anymore(4, 5)
+print_params_anymore(True, "string", [1,2,3], 3.1415, {"a": 1, "b": 2})
+
+
 
 # 2
 print("=" * 30)
